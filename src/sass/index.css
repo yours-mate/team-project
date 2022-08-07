@@ -90,4 +90,76 @@ address {
   background-image: url("../images/logo.png");
   background-size: cover;
   background-position: center;
+}
+
+.about {
+  padding-top: 60px;
+}
+
+.about__uppertitle {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1666666667;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.about__title {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.1470588235;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.about__img {
+  margin-top: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.about__subtitle {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5833333333;
+  color: var(--dark-text-color);
+}
+
+.about__text {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5833333333;
+  color: var(--gray-text-color);
+}
+
+.about__btn {
+  margin-top: 20px;
+}
+
+.about__list {
+  margin-top: 40px;
+}
+
+.about__icon {
+  fill: var(--secondary-color);
+}
+
+.about__amount {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1388888889;
+  color: var(--primary-color);
+}
+
+.about__descr {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.6666666667;
+  color: var(--dark-text-color);
 }/*# sourceMappingURL=index.css.map */
