@@ -24,27 +24,33 @@
         <div class="about-container">
           <picture class="about__img">
             <source
-              media="(max-width: 1200px)"
-              src="../images/about/img/pic-desc-1x.png 1x,
-           ../images/about/img/pic-desc-2x.png 2x, 
-           ../images/about/img/pic-desc-3x.png 3x"
-              type="image/png"
+              srcset="
+                ./images/about/pic/mob/pic-mob-1x.png,
+                ./images/about/pic/mob/pic-mob-@2x.png 2x,
+                ./images/about/pic/mob/pic-mob-@3x.png 3x
+              "
+              media="(max-width: 767px)"
             />
             <source
-              media="(min-width: 768px)"
-              src="../images/about/img/pic-tab-1x.png 1x, ../images/about/img/pic-tab-2x.png 2x"
-              type="image/png"
+              srcset="
+                ./images/about/pic/tab/pic-tab-1x.png,
+                ./images/about/pic/tab/pic-tab-@2x.png 2x,
+                ./images/about/pic/tab/pic-tab-@3x.png 3x
+              "
+              media="(max-width: 1199px)"
             />
             <source
-              media="(min-width: 767px)"
-              src="../images/about/img/pic-mob-1x.png 1x, ../images/about/img/pic-mob-2x.png 2x"
-              type="image/png"
+              srcset="
+                ./images/about/pic/desc/pic-desc-1x.png,
+                ./images/about/pic/desc/pic-desc-@2x.png 2x,
+                ./images/about/pic/desc/pic-desc-@3x.png 3x
+              "
+              media="(min-width: 1200px)"
             />
             <img
-              src="../images/about/img/pic.png"
-              alt="Pic"
-              width="501"
-              height="501"
+              class="pic-img"
+              src="./images/about/pic/mob/pic-mob-1x.png"
+              alt="Ice-cream"
             />
           </picture>
           <p class="about__subtitle">
