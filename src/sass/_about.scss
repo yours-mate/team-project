@@ -1,5 +1,6 @@
 .about {
    padding-top: 60px;
+   background-color: #FFF5F6;
 }
 
 .about__uppertitle {
@@ -14,6 +15,9 @@
 
 .about__title {
    margin-top: 15px;
+   width: 200px;
+   margin: auto;
+   margin-top: 15px;
    font-weight: 400;
    font-size: 34px;
    line-height: calc(39 / 34);
@@ -22,14 +26,23 @@
    color: var(--primary-color);
 }
 
+
 .about__img {
    margin-top: 32px;
    margin-left: 20px;
    margin-right: 20px; 
+   margin: auto;
+}
+
+.pic-img {
+   width: 100%;
 }
 
 .about__subtitle {
+   width: 220px;
+
    margin-top: 40px;
+
    font-weight: 500;
    font-size: 12px;
    line-height: calc(19 / 12);   
@@ -37,6 +50,7 @@
 }
 
 .about__text {
+   width: 220px;
    margin-top: 40px;
    font-weight: 500;
    font-size: 12px;

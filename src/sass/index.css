@@ -87,6 +87,7 @@ address {
 
 .about {
   padding-top: 60px;
+  background-color: #FFF5F6;
 }
 
 .about__uppertitle {
@@ -101,6 +102,9 @@ address {
 
 .about__title {
   margin-top: 15px;
+  width: 200px;
+  margin: auto;
+  margin-top: 15px;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.1470588235;
@@ -113,9 +117,15 @@ address {
   margin-top: 32px;
   margin-left: 20px;
   margin-right: 20px;
+  margin: auto;
+}
+
+.pic-img {
+  width: 100%;
 }
 
 .about__subtitle {
+  width: 220px;
   margin-top: 40px;
   font-weight: 500;
   font-size: 12px;
@@ -124,6 +134,7 @@ address {
 }
 
 .about__text {
+  width: 220px;
   margin-top: 40px;
   font-weight: 500;
   font-size: 12px;
