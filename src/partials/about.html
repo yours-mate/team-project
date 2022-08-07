@@ -1,80 +1,58 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IceCream</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- About start -->
-    <section class="about section">
-      <div class="container">
-        <h3 class="about__uppertitle">tradition and love</h3>
-        <h2 class="about__title">how it's made?</h2>
-        <div class="about-container">
-          <picture class="about__img">
-            <source
-              srcset="
-                ./images/about/pic/mob/pic-mob-1x.png,
-                ./images/about/pic/mob/pic-mob-@2x.png 2x,
-                ./images/about/pic/mob/pic-mob-@3x.png 3x
-              "
-              media="(max-width: 767px)"
-            />
-            <source
-              srcset="
-                ./images/about/pic/tab/pic-tab-1x.png,
-                ./images/about/pic/tab/pic-tab-@2x.png 2x,
-                ./images/about/pic/tab/pic-tab-@3x.png 3x
-              "
-              media="(max-width: 1199px)"
-            />
-            <source
-              srcset="
-                ./images/about/pic/desc/pic-desc-1x.png,
-                ./images/about/pic/desc/pic-desc-@2x.png 2x,
-                ./images/about/pic/desc/pic-desc-@3x.png 3x
-              "
-              media="(min-width: 1200px)"
-            />
-            <img
-              class="pic-img"
-              src="./images/about/pic/mob/pic-mob-1x.png"
-              alt="Ice-cream"
-            />
-          </picture>
-          <div class="about__group">
-            <p class="about__subtitle">
-              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-              erat at justo fringilla.
-            </p>
-            <p class="about__text">
-              Curabitur lacinia enim at ex blandit, vel pellentesque odio
-              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-              Cras massa nibh, tincidunt.
-              <span>Aliquam erat volutpat. Aenean accumsan.</span>
-            </p>
-            <button type="button"></button>
-          </div>
-        </div>
-
-        <!-- About end -->
+<!-- About start -->
+<section class="about section">
+  <div class="container">
+    <h3 class="about__uppertitle">tradition and love</h3>
+    <h2 class="about__title">how it's made?</h2>
+    <div class="about-container">
+      <picture class="about__img">
+        <source
+          srcset="
+            ./images/about/pic/mob/pic-mob-1x.png,
+            ./images/about/pic/mob/pic-mob-@2x.png 2x,
+            ./images/about/pic/mob/pic-mob-@3x.png 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/about/pic/tab/pic-tab-1x.png,
+            ./images/about/pic/tab/pic-tab-@2x.png 2x,
+            ./images/about/pic/tab/pic-tab-@3x.png 3x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/about/pic/desc/pic-desc-1x.png,
+            ./images/about/pic/desc/pic-desc-@2x.png 2x,
+            ./images/about/pic/desc/pic-desc-@3x.png 3x
+          "
+          media="(min-width: 1200px)"
+        />
+        <img
+          class="pic-img"
+          src="./images/about/pic/mob/pic-mob-1x.png"
+          alt="Ice-cream"
+        />
+      </picture>
+      <div class="about__group">
+        <p class="about__subtitle">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__text">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+          <span>Aliquam erat volutpat. Aenean accumsan.</span>
+        </p>
+        <button type="button"></button>
       </div>
-    </section>
+    </div>
+
     <!-- About end -->
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
-  </body>
-</html>
+  </div>
+</section>
+<!-- About end -->
