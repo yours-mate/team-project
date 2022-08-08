@@ -1,16 +1,25 @@
 .about {
    padding-top: 60px;
    background-color: #FFF5F6;
+}
 
-   background-image: url(../images/about/bg/about-bg.png);
+.about--overlay {
+   margin-left: auto;
+   margin-right: auto;
+
    background-repeat: no-repeat;
    background-position: 0px 575px;
    background-size: 100%;
 
-   @media screen and (max-width: 767px) {
+   @media screen and (min-width: 0px) and (max-width: 767px) {
       background-image: url(../images/about/bg/mob/about-bg-mob-1x.png);
-      background-image: url(../images/about/bg/mob/about-bg-mob-@2x.png);
-      background-image: url(../images/about/bg/mob/about-bg-mob-@3x.png);
+
+      @media (main-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         background-image: url(../images/about/bg/mob/about-bg-mob-@2x.png);  
+      }
    }
 
    @media screen and (min-width: 768px) {
@@ -19,17 +28,16 @@
 
    @media screen and (min-width: 1200px) {
       background-image: url(../images/about/bg/desc/about-bg-desc-1x.png);
-      background-image: url(../images/about/bg/desc/about-bg-desc-@2x.png);
-      background-image: url(../images/about/bg/desc/about-bg-desc-@3x.png);
-      background-repeat: no-repeat;
-      background-position: 0px 236px;
-      background-size: 1200px 521px;
+
+   @media (main-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+         background-image: url(../images/about/bg/desc/about-bg-desc-@2x.png);
+      }     
    }
 
-   .container {
-      width: 100%;
-   }
-}
+
 
 
 
