@@ -13,20 +13,20 @@
 
 
    @media screen and (min-width: 0px) and (max-width: 767px) {
-      background-image: url(../images/about/bg/mob/about-bg-mob-1x.png 1x);
+      background-image: url(../images/about/bg/mob/about-bg-mob-1x.png);
 
       @media (main-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-         background-image: url(../images/about/bg/mob/about-bg-mob-@2x.png 2x);  
+         background-image: url(../images/about/bg/mob/about-bg-mob-@2x.png);  
       }
 
       @media (main-device-pixel-ratio: 3),
       (-webkit-min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-         background-image: url(../images/about/bg/mob/about-bg-mob-@3x.png 3x);
+         background-image: url(../images/about/bg/mob/about-bg-mob-@3x.png);
       }
    }
 
@@ -36,20 +36,20 @@
 
    @media screen and (min-width: 1200px) {
       background-position: bottom;
-      background-image: url(../images/about/bg/desc/about-bg-desc-1x.png 1x);
+      background-image: url(../images/about/bg/desc/about-bg-desc-1x.png);
 
    @media (main-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-         background-image: url(../images/about/bg/desc/about-bg-desc-@2x.png 2x);
+         background-image: url(../images/about/bg/desc/about-bg-desc-@2x.png);
       }   
       
    @media (main-device-pixel-ratio: 3),
       (-webkit-min-device-pixel-ratio: 3),
       (min-resolution: 288dpi),
       (min-resolution: 3dppx) {
-         background-image: url(../images/about/bg/desc/about-bg-desc-@3x.png 3x);
+         background-image: url(../images/about/bg/desc/about-bg-desc-@3x.png);
       }
    }
 }
