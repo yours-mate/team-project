@@ -59,15 +59,11 @@
 
   color: var(--light-color);
   @media screen and (min-width: 768px) {
-    // margin-top: 102px;
-
     width: 162px;
     font-size: 22px;
     line-height: 1.14;
   }
   @media screen and (min-width: 1200px) {
-    // margin-top: 102px;
-
     width: 277px;
     font-size: 38px;
     line-height: 1.15;
@@ -228,7 +224,8 @@
     background-color: var(--light-color);
     border-radius: 50%;
     border-color: transparent;
-    border: 0;
+    border: none;
+    cursor: pointer;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 20px;
@@ -253,7 +250,7 @@
 .stats-list {
   @extend %list;
 
-  &__item:not(:first-child) {
+  &__item {
     margin-top: 16px;
   }
   @media screen and (min-width: 1200px) {
