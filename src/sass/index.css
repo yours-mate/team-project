@@ -85,9 +85,137 @@ address {
   overflow: hidden;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.btn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    display: block;
+    width: 160px;
+    margin-left: 32px;
+    background-color: var(--light-color);
+  }
+}
+
+.header-btn {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-btn {
+    display: block;
+    margin-right: 12px;
+  }
+}
+
+.header-btn__txt {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  color: #D41443;
+  margin-right: 12px;
+}
+
+.nav {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+}
+
+.mobile-menu-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  z-index: 100;
+}
+.mobile-menu-btn svg {
+  stroke: var(--primary-color);
+}
+.mobile-menu-btn:focus, .mobile-menu-btn:hover {
+  fill: var(--light-color);
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+}
+
+.mobile-menu-btn.is-open .mobile-menu-burger {
+  opacity: 0;
+}
+
+.mobile-menu-close {
+  opacity: 0;
+}
+.mobile-menu-btn.is-open .mobile-menu-close {
+  opacity: 1;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(100%);
+  width: 100vw;
+  height: 100vh;
+  background-color: #E17992;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+}
+.mobile-menu.is-open {
+  transform: translateX(0%);
+}
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu__btn {
+  background: var(--light-color);
+  margin-top: 60px;
+  width: 209px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #D41443;
+}
+
 .about {
   padding-top: 60px;
-  background-color: #FFF5F6;
+  background-color: #fff5f6;
 }
 
 .about__uppertitle {
