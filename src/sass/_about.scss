@@ -109,9 +109,7 @@
 }
 
 .about__btn {
-  @extend %button
-
-   min-width: 176px;
+  min-width: 176px;
   color: var(--primary-color);
   background-color: var(--light-color);
 
