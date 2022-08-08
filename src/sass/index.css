@@ -114,6 +114,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .about--overlay {
+    background-position: bottom;
     background-image: url(../images/about/bg/desc/about-bg-desc-1x.png);
   }
 }
@@ -243,13 +244,18 @@ address {
 }
 @media screen and (min-width: 768px) {
   .about__text {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 
 .about__text__span {
   color: var(--gray-text-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .about__text__span {
+    margin-bottom: 40px;
+  }
 }
 
 .about__btn {
