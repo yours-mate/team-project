@@ -1,15 +1,17 @@
 <!-- ----------------------------------------------------------------------- -->
 <!--                            Contacts section                             -->
 <!-- ----------------------------------------------------------------------- -->
-<section class="contacts section">
-  <div class="container">
+<section class="contacts section" id="contacts">
+  <div class="contacts__container container">
     <h2 class="visually-hidden">Contacts</h2>
     <div class="contacts__box">
       <ul class="contacts__list">
         <li class="contacts__item">
           <ul class="company__list">
             <li class="company__item">
-              <span class="company__category">CAFE</span>
+              <span class="company__category company__category--brown"
+                >CAFE</span
+              >
               <p class="company__name">Chicago</p>
               <p class="company__text">
                 Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -40,7 +42,9 @@
         <li class="contacts__item">
           <ul class="company__list">
             <li class="company__item">
-              <span class="company__category">FOOD TRUCK</span>
+              <span class="company__category company__category--green"
+                >FOOD TRUCK</span
+              >
               <p class="company__name">Los Angeles</p>
               <p class="company__text">
                 Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -71,15 +75,17 @@
         <li class="contacts__item">
           <ul class="company__list">
             <li class="company__item">
-              <span class="company__category">CAFE</span>
+              <span class="company__category company__category--brown"
+                >CAFE</span
+              >
               <p class="company__name">New York</p>
               <p class="company__text">
                 Fusce ut velit laoreet, tempus arcu molestie vulputate
               </p>
             </li>
-            <li class="company__item">
-              <p class="company__days">Monday - Friday</p>
-              <p class="company__time">06:00 AM - 10:00 PM</p>
+            <li class="company__item">              
+                <p class="company__days">Monday - Friday</p>
+                <p class="company__time">06:00 AM - 10:00 PM</p>              
               <p class="company__days">Saturday - Sunday</p>
               <p class="company__time">08:00 AM - 16:00 PM</p>
             </li>
@@ -101,16 +107,16 @@
         </li>
       </ul>
     </div>
-    <div class="contacts-btn btn">
-      <button type="button">
+    <div class="contacts-buttons">
+      <button class="contacts-button contacts-button--dark type="button">
         Our Locations
-        <svg>
+        <svg class="contacts__icon" width="20" height="20">
           <use></use>
         </svg>
       </button>
-      <button type="button">
+      <button class="contacts-button contacts-button--light" type="button">
         Franchise
-        <svg>
+        <svg class="contacts__icon" width="20" height="20">
           <use></use>
         </svg>
       </button>

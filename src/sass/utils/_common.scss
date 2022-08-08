@@ -75,3 +75,19 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+// .card-set {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: var(--indent);
+//     @media screen and (max-width: 767px) {
+//       justify-content: center;
+//     }
+//   }
+  
+
+// .card-set__item {
+//   @media screen and (min-width: 768px) {    
+//     flex-basis: calc ((100% - var(--indent) * (var(--items) - 1)) / var(--items));  
+//   }
+// }
