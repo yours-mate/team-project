@@ -27,6 +27,7 @@
    }
 
    @media screen and (min-width: 1200px) {
+      background-position: bottom;
       background-image: url(../images/about/bg/desc/about-bg-desc-1x.png);
 
    @media (main-device-pixel-ratio: 2),
@@ -36,7 +37,7 @@
          background-image: url(../images/about/bg/desc/about-bg-desc-@2x.png);
       }     
    }
-
+}
 
 
 
@@ -159,13 +160,17 @@
    color: var(--gray-text-color);
 
    @media screen and (min-width: 768px) {
-      margin-bottom: 40px;
+      margin-bottom: 10px;
    }
 }
 
 .about__text__span {
    color: var(--gray-text-color);
    margin-bottom: 20px;
+
+   @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+   }
 }
 
 .about__btn {
