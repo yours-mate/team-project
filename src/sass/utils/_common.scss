@@ -13,7 +13,9 @@ h6 {
   font-family: 'Titan One', cursive;
   margin: 0px;
 }
-
+p {
+  margin: 0px;
+}
 img {
   display: block;
   max-width: 100%;
@@ -42,11 +44,22 @@ address {
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  height: 44px;
+  border-radius: 22px;
 }
 
 .visually-hidden {
