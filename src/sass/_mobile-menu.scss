@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     margin-left: auto;
+    transition: all .25s;
 
     & svg {
         stroke: var(--primary-color);
@@ -12,7 +13,9 @@
 
     &:focus,
     &:hover {
-        fill: var(--light-color);
+        & svg {
+            stroke: var(--light-color);
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -77,6 +80,11 @@
     line-height: 1.31;  
     color: var(--primary-color);
     background: var(--light-color);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
 }
 
 .menu-list {
@@ -99,6 +107,11 @@
     display: flex;
     align-items: center;
     color: var(--light-color);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-color);
+    }
 }
 
 .menu-list__link--active {
