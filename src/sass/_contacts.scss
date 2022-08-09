@@ -173,23 +173,24 @@
 
   display: block;
   color: var(--gray-text-color);
-  transition: transform var(--animation);
+  transition: transform var(--animation),
+    font-weight var(--animation);
+    
+}
+.contacts__link:hover,
+.contacts__link:focus {
+  color: var(--primary-color);
+  transform: scale(1.15);
+  font-weight: 900;  
 }
 
-.contacts__link:first-child {
+.company__item:last-child {
   padding-top: 24px;
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
   }
 }
-
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--primary-color);  
-  transform: scale(1.15);
-}
-
 
 .contacts-buttons {
   display: flex;
@@ -227,19 +228,32 @@
 .contacts-button--dark {
   background-color: var(--primary-color);
   color: var(--light-color);
-  transition: transform var(--animation);
+  transition: transform var(--animation), 
+    border-radius var(--animation),
+    text-transform var(--animation),
+    font-weight var(--animation);
 }
 .contacts-button--dark:hover,
 .contacts-button--dark:focus {
   cursor: pointer;
   background-color: var(--btn-hover-dark);
   transform: scale(1.15);
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-weight: 900;
+  // width: 100px;
+  // height: 100px;  
+  // writing-mode: vertical-lr;
+  // text-orientation: upright;
 }
 
 .contacts-button--light {
   background-color: var(--light-color);
   color: var(--primary-color);
-  transition: transform var(--animation);
+  transition: transform var(--animation),
+      border-radius var(--animation),
+      text-transform var(--animation),
+      font-weight var(--animation);
 }
 .contacts-button--light:hover,
 .contacts-button--light:focus {
@@ -247,6 +261,9 @@
   background-color: var(--btn-hover-light);
   color: var(--btn-hover-dark);
   transform: scale(1.15);
+    border-radius: 50%;
+  text-transform: uppercase;
+    font-weight: 900;
 }
 .contacts__icon {
   margin-left: 14px;
