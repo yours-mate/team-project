@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     margin-left: auto;
-    z-index: 100;
+    transition: all .25s;
 
     & svg {
         stroke: var(--primary-color);
@@ -13,12 +13,20 @@
 
     &:focus,
     &:hover {
-        fill: var(--light-color);
+        & svg {
+            stroke: var(--light-color);
+        }
     }
 
     @media screen and (min-width: 1200px) {
         display: none;
     }
+}
+
+.close-menu-btn {
+    position: absolute;
+    right: 20;
+    top: 20;
 }
 
 .mobile-menu-burger {
@@ -29,56 +37,83 @@
 }
 
 .mobile-menu-close {
-    opacity: 0;
+    opacity: 1;
 
     .mobile-menu-btn.is-open & {
-        opacity: 1;
+        opacity: 0;
     }
 }
 
 .mobile-menu {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 10;
     display: flex;
     flex-direction: column;
-    transform: translateX(100%);
-    width: 100vw;
+    transform: translateX(calc(102%));
+    max-width: 250px;
+    width: 100%;
     height: 100vh;
+    padding: 60px 0;
     background-color: #E17992;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid var(--dark-text-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
 
     &.is-open {
         transform: translateX(0%);
     }
-
+         
     @media screen and (min-width: 1200px) {
         display: none;
     }
 }
 
 .mobile-menu__btn {
-    background: var(--light-color);
+    display: block;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
     width: 209px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.31;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    line-height: 1.31;  
     color: var(--primary-color);
+    background: var(--light-color);
+
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
 }
 
-.mobile-btn__txt {
+.menu-list {
+    @extend %list;
+
+    margin-top: 20px;
+}
+
+.menu-list__item {
+    padding: 12px 20px;
+    border: 1px solid #E18298;
+}
+
+.menu-list__link {
+    @extend %link;
+
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.31;
+    font-size: 14px;
+    line-height: 1.28;
     display: flex;
     align-items: center;
-    text-align: center;
+    color: var(--light-color);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-color);
+    }
+}
+
+.menu-list__link--active {
     color: var(--primary-color);
 }

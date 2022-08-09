@@ -1,16 +1,32 @@
 <div class="mobile-menu" data-menu>
-        <button class="mobile-menu__btn btn" type="submit">
-            <span class="mobile-btn__txt">Buy now
-        <svg width="11px" height="11px">
-            <use href="./images/icons.svg#icon-btn-arrow"></use>
-        </svg>
-        </span>>
-        </button>
-        <ul class="mobile-menu-contacts ">
-          <li><a href=""><p>Home</p></a></li>
-          <li><a href=""><p>About us</p></a></li>
-          <li><a href=""><p>How it's made?</p></a></li>
-          <li><a href=""><p>Our products</p></a></li>
-          <li><a href=""><p>Contact</p></a></li>
-        </ul>
+  <button class="mobile-menu-btn close-menu-btn" type="button" data-menu-button>
+    <svg class="" width="20px" height="14px">
+      <use class="mobile-menu-close" href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <button class="mobile-menu__btn btn" type="submit">
+    <span class="mobile-btn__txt"
+      >Buy now
+      <svg width="11px" height="11px">
+        <use href="./images/icons.svg#icon-btn-arrow"></use>
+      </svg>
+    </span>
+  </button>
+  <ul class="menu-list">
+    <li class="menu-list__item">
+      <a class="menu-list__link menu-list__link--active" href="#home">Home</a>
+    </li>
+    <li class="menu-list__item">
+      <a class="menu-list__link" href="#contact">About us</a>
+    </li>
+    <li class="menu-list__item">
+      <a class="menu-list__link" href="#about">How it's made?</a>
+    </li>
+    <li class="menu-list__item">
+      <a class="menu-list__link" href="#products">Our products</a>
+    </li>
+    <li class="menu-list__item">
+      <a class="menu-list__link" href="#contacts">Contact</a>
+    </li>
+  </ul>
 </div>
