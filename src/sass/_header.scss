@@ -22,7 +22,6 @@
 
     display: flex;
     align-items: center;
-    // background-color:  var(--secondary-color);
 }
 
 .btn {
@@ -102,4 +101,8 @@
     &:focus {
         color: var(--primary-color);
     }
+}
+
+.nav-list__link--active {
+    color: var(--primary-color);
 }
