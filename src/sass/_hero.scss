@@ -116,6 +116,7 @@
 
     background-color: var(--light-color);
     color: var(--primary-color);
+    transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 1200px) {
       min-width: 138px;
       min-height: 40px;
@@ -176,7 +177,6 @@
     right: 149px;
   }
 }
-
 .left-content {
   @media screen and (max-width: 767px) {
     display: none;
@@ -193,9 +193,20 @@
     left: 16px;
   }
 }
+.left-content-wrapper {
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 39px;
+    left: 0px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    top: 68px;
+    left: 0px;
+  }
+}
 .left-content__descr {
   @media screen and (min-width: 768px) {
-    margin-top: 45px;
     width: 120px;
 
     font-family: 'DM Sans';
