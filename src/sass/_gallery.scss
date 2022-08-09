@@ -1,14 +1,14 @@
 .gallery {
   background-image: linear-gradient(
     to bottom,
-    #fff5f6 20%,
+    var(--background-color) 20%,
     var(--light-color) 20%
   );
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     background-image: linear-gradient(
       to bottom,
-      #fff5f6 57%,
+      var(--background-color) 57%,
       var(--light-color) 57%
     );
   }
@@ -64,11 +64,19 @@
   }
 
   &:nth-child(2) {
-    margin-top: 25px;
+    margin-top: 15px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 25px;
+    }
   }
 
   &:nth-child(4) {
-    margin-top: 45px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+      margin-top: 45px;
+    }
   }
 }
 
