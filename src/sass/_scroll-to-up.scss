@@ -1,0 +1,39 @@
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 199;
+  width: 32px;
+  height: 32px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    right: 50px;
+    width: 32px;
+    height: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: 50px;
+    right: 50px;
+    width: 48px;
+    height: 48px;
+  }
+}
+.scroll-btn {
+    width: 32px;
+    height: 32px;
+  
+  @media screen and (min-width: 1200px) {
+    width: 48px;
+    height: 48px;
+  }
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--secondary-color);
+  &:hover {
+    fill: var(--primary-color);
+  }
+}
