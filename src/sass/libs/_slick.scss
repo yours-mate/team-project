@@ -100,6 +100,7 @@
   height: 12px;
   background-image: url(../images/reviews/vector-mob.png);
   background-repeat: no-repeat;
+  background-size: contain;
 
   // мобільна версія ретіни
   @media (min-device-pixel-ratio: 2),
