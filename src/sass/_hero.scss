@@ -237,6 +237,10 @@
     border-color: transparent;
     border: none;
     cursor: pointer;
+
+    & svg {
+      fill: var(--primary-color);
+    }
   }
   @media screen and (min-width: 1200px) {
     margin-top: 20px;
