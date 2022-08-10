@@ -1,0 +1,337 @@
+.overlay {
+
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+    pointer-events: none;
+ 
+
+
+}
+
+/* Стили для модальных окон */
+
+.modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 500px;
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+  
+    box-shadow: 0 3px 10px -.5px rgba(212, 20, 67, 0.2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #FFB8CA;
+
+    background-image: url('../images/hero/desktop/ice-cream@1x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    transition: 0.3s all;
+
+}
+
+.user-feedback-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.form-message {
+
+    display: inline-block;
+
+    margin-bottom: 12px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color:   var(--primary-color);
+
+    @media screen and (min-width:768px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 22px;
+    }
+}
+
+.form-input {
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.form-input:last-of-type {
+    margin-bottom: 20px;
+}
+
+.input-label {
+
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
+
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    cursor: pointer;
+}
+
+.input-field {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    padding-right: 12px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border-color:   var(--primary-color);
+
+        &:hover+.form-icon,
+        &:focus+.form-icon {
+            color:   var(--primary-color);
+        }
+
+
+    }
+}
+
+.input-string {
+    display: inline-block;
+    position: relative;
+    color: #FFB8CA;
+
+
+}
+
+.form-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    cursor: pointer;
+}
+
+
+
+
+.comment-field {
+
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    outline: transparent;
+
+    &:hover,
+    &:focus {
+        border-color:   var(--primary-color);
+    }
+}
+
+
+.user-agreement-txt {
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    margin-bottom: 30px;
+
+    font-size: 14px;
+    line-height: 1.17;
+    font-weight: 700;
+    gap: 8px;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width:768px) {
+        justify-content: flex-start;
+
+    }
+
+    @media screen and (min-width:1200px) {
+
+        line-height: 1.71;
+    }
+}
+
+.checkbox-custom {
+    width: 16px;
+    height: 15px;
+    
+    background-image: url(../images/icons/custom-check-box-icons/checkbox-unchecked.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.checkbox:checked+.checkbox-custom {
+
+
+
+    background-image: url(../images/icons/custom-check-box-icons/checkmark.svg);
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+   display: block;
+}
+
+.agreement-cond {
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.modal__close-btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    fill: #FFB8CA;
+    border: 1px solid rgba(212, 20, 67, 0.2);
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 3px 10px -.5px rgba(212, 20, 67, 0.2);
+
+
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill:   var(--primary-color);
+    }
+
+
+
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+    overflow-y: scroll;
+}
+.submit-btn{
+    align-self: center;
+    width: 138px;
+    height: 40px;
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: none;
+        
+    color:   var(--primary-color);
+}
+
+.about__modal{
+    width: calc(100vw - 10px);
+    
+
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+
+    box-shadow: 0 3px 10px -.5px rgba(212, 20, 67, 0.2), inset 0 3px 10px -.5px rgba(212, 20, 67, 0.2);
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+
+    background-image: none;
+  
+    transition: 0.3s all;
+}
+.modal__list{
+    @extend %list;
+}
+.about__modal-desc{
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.76;
+
+    letter-spacing: 0.04em;
+    color: #000000;
+
+}

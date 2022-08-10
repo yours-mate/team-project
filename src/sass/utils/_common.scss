@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
@@ -13,7 +16,9 @@ h6 {
   font-family: 'Titan One', cursive;
   margin: 0px;
 }
-
+p {
+  margin: 0px;
+}
 img {
   display: block;
   max-width: 100%;

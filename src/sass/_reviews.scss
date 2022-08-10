@@ -1,0 +1,140 @@
+.reviews {
+  &_container {
+    text-align: center;
+  }
+  &_list {
+    @extend %list;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.reviews_item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews_foto {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+}
+
+.reviews_description-decor {
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 30px,
+    var(--light-gray-decor) 30px 31px
+  );
+}
+.reviews_thumb-description {
+  position: relative;
+  padding: 43px 50px 17px 50px;
+  margin-bottom: 16px;
+  background-color: var(--light-grey-bk-cl);
+  z-index: -100;
+}
+
+.reviews_icon {
+  position: absolute;
+  top: 30px;
+  left: 53px;
+
+  z-index: -10;
+
+  fill: var(--light-gray-decor);
+}
+.reviews_description {
+  padding-right: 8px;
+  padding-left: 15px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  text-align: center;
+}
+
+.reviews_signature {
+  position: relative;
+  font-weight: 500;
+  line-height: 1.86;
+  padding: 16px 0px;
+  z-index: 100;
+  background-color: transparent;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--hot-pinck-dots);
+    box-shadow: -20px 0 0 var(--hot-pinck-dots), 20px 0 0 var(--hot-pinck-dots);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reviews_list {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
+  .reviews_foto {
+    margin-bottom: 20px;
+  }
+  .reviews_thumb-description {
+    padding: 37px 6px 36px 6px;
+    margin-bottom: 4px;
+  }
+  .reviews_description {
+    font-size: 14px;
+    line-height: 2.16;
+
+    padding: 0 49px 8px 45px;
+  }
+
+  .reviews_signature {
+    font-size: 16px;
+    padding-bottom: 32px;
+  }
+  .reviews_icon {
+    top: 20px;
+    left: 6px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews_list {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .reviews_foto {
+    margin-bottom: 16px;
+  }
+  .reviews_thumb-description {
+    margin-bottom: 16px;
+    padding: 47px 73px 39px 74px;
+  }
+  .reviews_description {
+    padding: 0 36px 8px 35px;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.86;
+  }
+  .reviews_signature {
+    font-size: 20px;
+  }
+
+  .reviews_icon {
+    top: 32px;
+    left: 72px;
+  }
+}

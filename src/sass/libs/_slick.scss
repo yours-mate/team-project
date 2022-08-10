@@ -1,0 +1,150 @@
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+//  @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+.carousel_item {
+  display: flex;
+}
+// Buttons
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  color: var(--primary-color);
+
+  font-size: 0;
+
+  transition: color var(--animation);
+
+  //   Вміст
+  &::before {
+    display: table;
+    font-size: 27px;
+    // color: var(--primary-color);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--secondary-color);
+  }
+}
+
+.slick-next {
+  right: 0;
+
+  &::before {
+    content: '\276F';
+  }
+}
+.slick-prev {
+  left: 0;
+  z-index: 10000;
+
+  &::before {
+    content: '\276E';
+  }
+}
+
+.slick-disabled {
+  visibility: hidden;
+}
+
+// пагінація
+.slick-dots {
+  @extend %list;
+
+  display: flex;
+  justify-content: center;
+  height: 12px;
+  align-items: flex-end;
+}
+
+.slick-dots li + li {
+  margin-left: 18px;
+  //   height: 12px;
+}
+
+// #slick-slide-control00,
+#slick-slide-control01,
+#slick-slide-control02 {
+  padding: 0;
+  border: none;
+  background-color: var(--dots-gray-bk-cl);
+  cursor: pointer;
+
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+
+  font-size: 0;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-color);
+  }
+}
+
+#slick-slide-control00 {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0;
+
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/reviews/vector-mob.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  // мобільна версія ретіни
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/reviews/vector@2x-mob.png);
+  }
+  @media (min-device-pixel-ratio: 3),
+    (-webkit-min-device-pixel-ratio: 3),
+    (min-resolution: 192dpi),
+    (min-resolution: 3dppx) {
+    background-image: url(../images/reviews/vector@3x-mob.png);
+  }
+
+  // планшет
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/reviews/vector-tab.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/reviews/vector@2x-tab.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 192dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/reviews/vector@3x-tab.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/reviews/vector-des.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/reviews/vector@2x-des.png);
+    }
+    @media (min-device-pixel-ratio: 3),
+      (-webkit-min-device-pixel-ratio: 3),
+      (min-resolution: 192dpi),
+      (min-resolution: 3dppx) {
+      background-image: url(../images/reviews/vector@3x-des.png);
+    }
+  }
+}
