@@ -20,6 +20,8 @@
 }
 
 .reviews_foto {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
 }
 
@@ -53,7 +55,7 @@
 
   font-weight: 500;
   font-size: 12px;
-  line-height: 31px;
+  line-height: 2.55;
 
   text-align: center;
 }
@@ -61,7 +63,7 @@
 .reviews_signature {
   position: relative;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 1.86;
   padding: 16px 0px;
   z-index: 100;
   background-color: transparent;
@@ -93,14 +95,13 @@
   }
   .reviews_description {
     font-size: 14px;
-    line-height: 30px;
+    line-height: 2.16;
 
     padding: 0 49px 8px 45px;
   }
 
   .reviews_signature {
     font-size: 16px;
-    line-height: 30px;
     padding-bottom: 32px;
   }
   .reviews_icon {
@@ -126,11 +127,12 @@
     padding: 0 36px 8px 35px;
     font-size: 16px;
     letter-spacing: 0.04em;
+    line-height: 1.86;
   }
   .reviews_signature {
     font-size: 20px;
-    line-height: 37px;
   }
+
   .reviews_icon {
     top: 32px;
     left: 72px;
