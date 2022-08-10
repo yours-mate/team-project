@@ -322,8 +322,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--primary-color);
-    color: var(--light-color);
+    background-color: var(--btn-hover-light);
   }
 }
 
