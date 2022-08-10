@@ -1,4 +1,4 @@
-// @import '../../node_modules/slick-carousel/slick/slick.scss';
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
 //  @import '../../../node_modules/slick-carousel/slick/slick-theme.scss';
 
 .carousel_item {
@@ -100,6 +100,7 @@
   height: 12px;
   background-image: url(../images/reviews/vector-mob.png);
   background-repeat: no-repeat;
+  background-size: contain;
 
   // мобільна версія ретіни
   @media (min-device-pixel-ratio: 2),
