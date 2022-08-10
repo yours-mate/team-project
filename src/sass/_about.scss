@@ -104,11 +104,6 @@
    @media screen and (min-width: 768px) {
       display: flex;
    }
-
-   @media screen and (min-width: 768px) {
-      display: flex;
-   }
-
 }
 
 .about__img {
@@ -160,6 +155,15 @@
    margin: 0;
    margin-bottom: 40px;
    color: var(--dark-text-color);
+
+   @media screen and (min-width: 768px) {
+      font-size: 14px;
+   }
+      
+   @media screen and (min-width: 1200px) {
+      font-size: 16px;
+   }
+
 }
 
 .about__text {
@@ -169,6 +173,11 @@
 
    @media screen and (min-width: 768px) {
       margin-bottom: 10px;
+      font-size: 14px;
+   }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
    }
 }
 
