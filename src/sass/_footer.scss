@@ -116,7 +116,7 @@
 
     border-radius: 50%;
     background-color:#FEA5BB;
-    fill:var(--light-color) ;
+
 
     cursor: pointer;
 
@@ -125,7 +125,9 @@
     &:hover, &:focus {
         background-color: #D41443;
     }
-
+.footer__social-icon{
+    fill: var(--light-color);
+}
 }
 .footer__tel{
 
