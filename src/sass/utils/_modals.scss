@@ -30,7 +30,7 @@
 
     /*  Центрируем и задаем z-index */
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 30;
@@ -269,8 +269,12 @@
 .overlay.active {
     opacity: 1;
     visibility: visible;
-    overflow-y: scroll;
+    @media screen and (max-width:768px) {
+        overflow-y: scroll;
+        max-height: 500px; 
+        }
 }
+
 .submit-btn{
     align-self: center;
     width: 138px;
@@ -293,7 +297,7 @@
 }
 
 .about__modal{
-    width: calc(100vw - 10px);
+
     
 
     /*  Центрируем и задаем z-index */
