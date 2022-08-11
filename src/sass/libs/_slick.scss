@@ -41,7 +41,7 @@
 }
 .slick-prev {
   left: 0;
-  z-index: 10000;
+  z-index: 9;
 
   &::before {
     content: '\276E';
@@ -98,52 +98,7 @@
   cursor: pointer;
   width: 12px;
   height: 12px;
-  background-image: url(../images/reviews/vector-mob.png);
+  background-size: contain;
+  background-image: url(../images/reviews/home-btn.svg);
   background-repeat: no-repeat;
-
-  // мобільна версія ретіни
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/reviews/vector@2x-mob.png);
-  }
-  @media (min-device-pixel-ratio: 3),
-    (-webkit-min-device-pixel-ratio: 3),
-    (min-resolution: 192dpi),
-    (min-resolution: 3dppx) {
-    background-image: url(../images/reviews/vector@3x-mob.png);
-  }
-
-  // планшет
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/reviews/vector-tab.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/reviews/vector@2x-tab.png);
-    }
-    @media (min-device-pixel-ratio: 3),
-      (-webkit-min-device-pixel-ratio: 3),
-      (min-resolution: 192dpi),
-      (min-resolution: 3dppx) {
-      background-image: url(../images/reviews/vector@3x-tab.png);
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/reviews/vector-des.png);
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/reviews/vector@2x-des.png);
-    }
-    @media (min-device-pixel-ratio: 3),
-      (-webkit-min-device-pixel-ratio: 3),
-      (min-resolution: 192dpi),
-      (min-resolution: 3dppx) {
-      background-image: url(../images/reviews/vector@3x-des.png);
-    }
-  }
 }
