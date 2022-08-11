@@ -5,6 +5,26 @@
   display: flex;
 }
 // Buttons
+// .slick-prev,
+// .slick-next {
+//   position: absolute;
+//   top: 50%;
+//   z-index: 9;
+//   font-size: 0;
+//   width: 20px;
+//   height: 20px;
+//   border: 0;
+// }
+// .slick-prev {
+//   left: 0;
+//   background: url(../images/reviews/circle-left.svg) 0 0 / 100% no-repeat;
+// }
+
+// .slick-next {
+//   right: 0;
+//   background: url(../images/reviews/circle-right.svg) 0 0 / 100% no-repeat;
+// }
+
 .slick-arrow {
   position: absolute;
   top: 50%;
@@ -23,7 +43,6 @@
   &::before {
     display: table;
     font-size: 27px;
-    // color: var(--primary-color);
   }
 
   &:hover,
@@ -60,31 +79,33 @@
   justify-content: center;
   height: 12px;
   align-items: flex-end;
+
+  & li + li {
+    margin-left: 18px;
+  }
+
+  button {
+    padding: 0;
+    border: none;
+    background-color: var(--dots-gray-bk-cl);
+    cursor: pointer;
+
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+
+    font-size: 0;
+
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+      background-color: var(--primary-color);
+    }
+  }
 }
-
-.slick-dots li + li {
-  margin-left: 18px;
-  //   height: 12px;
-}
-
-// #slick-slide-control00,
-#slick-slide-control01,
-#slick-slide-control02 {
-  padding: 0;
-  border: none;
-  background-color: var(--dots-gray-bk-cl);
-  cursor: pointer;
-
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-
-  font-size: 0;
-
-  transition: background-color var(--animation);
-
-  &:hover,
-  &:focus {
+.slick-active {
+  button {
     background-color: var(--primary-color);
   }
 }
