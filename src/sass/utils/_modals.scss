@@ -28,7 +28,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -40%);
   z-index: 30;
   /* Должен быть выше чем у подложки*/
 
@@ -240,12 +240,16 @@
 
 .modal.active,
 .overlay.active {
+
     opacity: 1;
     visibility: visible;
-    @media screen and (max-width:768px) {
-        overflow-y: scroll;
-        max-height: 500px; 
-        }
+}
+.modal.active{
+
+  @media screen and (max-width:768px) {
+      overflow-y: scroll;
+      max-height: 500px;
+    }
 }
 
 .submit-btn{
@@ -297,10 +301,14 @@
     @extend %list;
 }
 .about__modal-desc{
-  opacity: 1;
-  visibility: visible;
-  overflow-y: scroll;
-  height: 100vh;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.76;
+  
+  letter-spacing: 0.04em;
+  
+  color: #000000;
+ 
 }
 .submit-btn {
   align-self: center;
