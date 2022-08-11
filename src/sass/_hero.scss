@@ -122,6 +122,9 @@
       min-height: 40px;
     }
   }
+  .hero-nav__item:last-child .hero-nav__link:focus{
+    background-color: #ecebeb;
+  }
   .hero-nav__item:last-child .hero-nav__link:hover {
     background-color: #ecebeb;
   }
@@ -223,15 +226,23 @@
   }
 }
 .left-content__button {
+  transition: transform var(--animation);
+  &:hover,
+  &:focus {
+    transform: scale(1.25);
+  }
+  & svg {
+    fill: var(--primary-color);
+  }
   @media screen and (min-width: 768px) {
     display: inline-flex;
     align-items: center;
     justify-content: center;
 
     margin-top: 10px;
-
     width: 18px;
     height: 18px;
+
     background-color: var(--light-color);
     border-radius: 50%;
     border-color: transparent;
@@ -240,9 +251,18 @@
   }
   @media screen and (min-width: 1200px) {
     margin-top: 20px;
-
     width: 26px;
     height: 26px;
+  }
+}
+.left-content__icon {
+  @media screen and (min-width: 768px) {
+    width: 9px;
+    height: 9px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 13px;
+    height: 13px;
   }
 }
 .stats {

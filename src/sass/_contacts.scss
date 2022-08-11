@@ -228,19 +228,20 @@
 .contacts-button--dark {
   background-color: var(--primary-color);
   color: var(--light-color);
-  transition: transform var(--animation), 
-    border-radius var(--animation),
-    text-transform var(--animation),
-    font-weight var(--animation);
+  transition: transform var(--animation)
+    // border-radius var(--animation),
+    // text-transform var(--animation),
+    // font-weight var(--animation)
+    ;
 }
 .contacts-button--dark:hover,
 .contacts-button--dark:focus {
   cursor: pointer;
   background-color: var(--btn-hover-dark);
   transform: scale(1.15);
-  border-radius: 50%;
-  text-transform: uppercase;
-  font-weight: 900;
+  // border-radius: 50%;
+  // text-transform: uppercase;
+  // font-weight: 900;
   // width: 100px;
   // height: 100px;  
   // writing-mode: vertical-lr;
@@ -250,10 +251,10 @@
 .contacts-button--light {
   background-color: var(--light-color);
   color: var(--primary-color);
-  transition: transform var(--animation),
-      border-radius var(--animation),
-      text-transform var(--animation),
-      font-weight var(--animation);
+  transition: transform var(--animation);
+      // border-radius var(--animation),
+      // text-transform var(--animation),
+      // font-weight var(--animation);
 }
 .contacts-button--light:hover,
 .contacts-button--light:focus {
@@ -261,12 +262,77 @@
   background-color: var(--btn-hover-light);
   color: var(--btn-hover-dark);
   transform: scale(1.15);
-    border-radius: 50%;
-  text-transform: uppercase;
-    font-weight: 900;
+  //   border-radius: 50%;
+  // text-transform: uppercase;
+  //   font-weight: 900;
 }
 .contacts__icon {
   margin-left: 14px;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                         Tooltips on Contact Buttons                        */
+/* -------------------------------------------------------------------------- */
 
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  width: 100%;  
+  border-radius: 22px;
+  align-items: center;
+  left: 0;
+  top: 0;
+  // background: #3989c9;
+  font-weight: 900;
+  color: #fff;
+  padding: 0.5em;
+  
+  pointer-events: none;
+  opacity: 0;
+  transition: var(--animation);
+
+  @media screen and (min-width: 768px) {
+    
+  }
+}
+
+[data-tooltip]:first-child::after {
+  box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--contacts-brown);
+  @media screen and (min-width: 768px) {
+      left: 50%;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: -50%;
+    }
+}
+[data-tooltip]:last-child::after {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--contacts-green);
+  @media screen and (min-width: 768px) {
+    left: -50%;
+  }
+
+    @media screen and (min-width: 1200px) {
+      left: 50%;
+      box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+    }
+}
+
+[data-tooltip]:last-child:hover::after {
+  opacity: 1;  
+  top: 2.78em;  
+
+  @media screen and (min-width: 1200px) {
+      top: -2.18em;
+    }
+}
+[data-tooltip]:first-child:hover::after {
+  opacity: 1;
+  top: -2.18em;
+}
