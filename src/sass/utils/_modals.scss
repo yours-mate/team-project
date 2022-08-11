@@ -197,14 +197,8 @@
 
     color: #FFFFFF;
 
-    @media screen and (min-width:768px) {
-        justify-content: flex-start;
-
-    }
-
     @media screen and (min-width:1200px) {
-
-        line-height: 1.71;
+         line-height: 1.71;
     }
 }
 
