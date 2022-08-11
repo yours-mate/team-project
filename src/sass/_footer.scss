@@ -96,6 +96,7 @@
 .footer__social{
     margin-left: auto;
 }
+
 .footer__social-media{
     @extend %list;
 
@@ -108,11 +109,13 @@
 }
 .footer__social-web{
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 34px;
     height: 34px;
 
-    align-items: center;
-    justify-content: center;
+    
 
     border-radius: 50%;
     background-color:#FEA5BB;
@@ -125,6 +128,14 @@
     &:hover, &:focus {
         background-color: #D41443;
     }
+
+.footer__social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
 .footer__social-icon{
     fill: var(--light-color);
 }
