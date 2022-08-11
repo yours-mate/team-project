@@ -77,22 +77,27 @@
 
     font-size: 0;
 
-    transition: background-color var(--animation);
+    transition: all var(--animation);
 
     &:hover,
     &:focus {
-      background-color: var(--primary-color);
+      background-image: url(../images/reviews/home-btn.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: transparent;
     }
   }
 }
 .slick-active {
   button {
-    background-color: var(--primary-color);
+    background-image: url(../images/reviews/home-btn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
   }
 }
 
 #slick-slide-control00 {
-  background-color: transparent;
   padding: 0;
   border: none;
   font-size: 0;
@@ -100,9 +105,6 @@
   cursor: pointer;
   width: 12px;
   height: 12px;
-  background-size: contain;
-  background-image: url(../images/reviews/home-btn.svg);
-  background-repeat: no-repeat;
 
   // @media (min-device-pixel-ratio: 2),
   //   (-webkit-min-device-pixel-ratio: 2),
