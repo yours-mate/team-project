@@ -56,6 +56,7 @@
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  font-weight: 400;
 
   color: var(--light-color);
   @media screen and (min-width: 768px) {
@@ -122,7 +123,7 @@
       min-height: 40px;
     }
   }
-  .hero-nav__item:last-child .hero-nav__link:focus{
+  .hero-nav__item:last-child .hero-nav__link:focus {
     background-color: #ecebeb;
   }
   .hero-nav__item:last-child .hero-nav__link:hover {
