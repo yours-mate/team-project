@@ -335,3 +335,37 @@
 
   color: var(--primary-color);
 }
+
+.contacts__modal {
+  width: 260px;      
+  border-radius: 24px;
+  padding: 30px;
+
+  @media screen and (min-width: 768px) {
+      padding: 40px;
+      width: 460px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      padding: 50px;
+      width: 660px;
+    }
+}
+.contacts__map {  
+  width: 100%;
+  border-radius: 24px;  
+  border: none;
+}
+.contacts__map:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+    }
+}
+
+// @media screen and (min-width: 768px) {}
